@@ -77,7 +77,7 @@ def css_load():
 # --- DATA LOADING (Cached) ---
 @st.cache_data
 def load_and_clean_data():
-    df = pd.read_csv(r"D:\python\streamlit_project\Raw_data_pizza_sales.csv")
+    df = pd.read_csv("streamlit_project\Raw_data_pizza_sales.csv")
     df['order_date'] = pd.to_datetime(df['order_date'])
     df['month'] = df['order_date'].dt.month_name()
     df['month_number'] = df['order_date'].dt.month
