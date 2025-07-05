@@ -30,7 +30,7 @@ all_category = np.append(df['pizza_category'].unique(), 'All')
 
 
 # --- MAIN PAGE LAYOUT ---
-st.image(r"streamlit_project/Pizza Title.jpg", use_column_width=True)
+st.image(r"streamlit_project/Pizza Title.jpg", use_container_width=True)
 st.title("KPI and Metrics")
 st.markdown("---") # A subtle separator line
 
